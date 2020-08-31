@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'ThunderDemo';
+  src: url('ThunderDemo.eot');
+  src: url('ThunderDemo.eot?#iefix') format('embedded-opentype'),
+       url('ThunderDemo.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ThunderDemoRegular';
+  src: url('ThunderDemoRegular.svg#ThunderDemoRegular') format('svg'),
+       url('ThunderDemoRegular.ttf') format('truetype'),
+       url('ThunderDemoRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
