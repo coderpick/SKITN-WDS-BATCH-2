@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>icofont use</title>
+    <link rel="stylesheet" href="css/icofont.min.css">
+    <style>
+        .social-link a{
+            display: inline-block;
+            padding: 10px;
+            border:1px solid red;
+            text-decoration: none;
+            font-size: 40px;
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 60px;
+        }
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        ul li{
+            display: block;
+            padding: 10px 0;
+            font-size: 20px;
+        }
+        ul li::before{
+            content: "\ea98";
+            font-family: 'IcoFont' !important;
+            color:red;
+            padding-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+   <div class="social-link">
+       <a href=""><i class="icofont-facebook"></i></a> 
+       <a href=""><i class="icofont-twitter"></i></a>       
+   </div>
+   <ul>
+       <li> <i class="icofont-rounded-right"></i> List item</li>
+       <li>List item</li>
+       <li>List item</li>
+       <li>List item</li>
+       <li>List item</li>
+   </ul>
+</body>
+</html>

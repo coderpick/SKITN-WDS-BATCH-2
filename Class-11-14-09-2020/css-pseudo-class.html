@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css pseudo class</title>
+    <style>
+      ul{
+          margin: 0;
+          padding: 0;
+          list-style: none;
+      }
+      ul li{
+          display: inline-block;
+          padding: 0px 16px;
+          font-size: 20px;
+          border-right: 2px solid #333;
+      }
+           ul li:last-child{
+               border-right: none;
+           }
+           ul li:nth-child(3){
+               color:blue
+           }
+           /* table css */
+           table{
+               border-collapse: collapse;
+               width: 80%;
+           }
+           table th,td{
+               border: 1px solid #bbb;
+               padding: 10px;
+           }
+           table tr:first-child{
+               background:rgb(9, 235, 103);
+           }
+           table tr:nth-child(even){
+               background:#d8d8d8;
+           }
+    </style>
+</head>
+
+<body>
+   
+   <ul>
+       <li>List Item</li>
+       <li>List Item</li>
+       <li>List Item</li>
+       <li>List Item</li>
+       <li>List Item</li>
+       <li>List Item</li>
+       <li>List Item</li>
+   </ul>
+<hr>
+<h2>css table </h2>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>John</td>
+        <td>Carter</td>
+        <td>johncarter@mail.com</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Peter</td>
+        <td>Parker</td>
+        <td>peterparker@mail.com</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>John</td>
+        <td>Rambo</td>
+        <td>johnrambo@mail.com</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Harry</td>
+        <td>Potter</td>
+        <td>harrypotter@mail.com</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Peter</td>
+        <td>Parker</td>
+        <td>peterparker@mail.com</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>John</td>
+        <td>Rambo</td>
+        <td>johnrambo@mail.com</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Harry</td>
+        <td>Potter</td>
+        <td>harrypotter@mail.com</td>
+    </tr>
+</table>
+</body>
+
+</html>
