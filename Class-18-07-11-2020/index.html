@@ -1,0 +1,303 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Starter Template</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/icofont.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+  <!-- Add your site or application content here -->
+
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a href="" class="navbar-brand">Logo</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#CollaspeAbleNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="CollaspeAbleNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a class="nav-link active" href="">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="">Service</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Message</a>
+            <div class="dropdown-menu">
+              <a href="#" class="dropdown-item">Inbox</a>
+              <a href="#" class="dropdown-item">Drafts</a>
+              <a href="#" class="dropdown-item">Sent Items</a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">Trash</a>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="">Contact</a></li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" type="button" data-toggle="modal" data-target="#LoginModal">Login</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" type="button" data-toggle="modal"
+              data-target="#RegistrationModal">Registration</a></li>
+        </ul>
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <section id="welcome">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="welcome-text text-white">
+            <h1 class="display-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit</h1>
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum temporibus odit ad omnis
+              reprehenderit nobis cum, accusantium iusto fuga, vero esse fugit at voluptate iure, mollitia aliquid
+              sapiente asperiores sequi?</p>
+            <form action="">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Searh here...">
+                <div class="input-group-append">
+                  <span class="input-group-text">
+                    <span class="icofont-search-2"></span>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- //#welcome end  -->
+  <div id="aobut" class="bg-secondary pt-5 pb-5">
+    <div class="container">
+      <div class="row text-white">
+        <div class="col-sm-6">
+          <h2>Sign Up Form</h2>
+          <p>Bootstrap vartical form</p>
+          <form action="">
+            <label for="name" style="display: block;">Name</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <span class="icofont-user"></span>
+                </span>
+              </div>
+
+              <input type="text" class="form-control" id="name" placeholder="Username">
+            </div>
+            <!-- <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" class="form-control">
+            </div> -->
+            <label for="email">Email</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <span class="icofont-envelope"></span>
+                </span>
+              </div>
+              <input type="email" id="email" name="email" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" class="form-control">
+            </div>
+            <button type="submit" name="submit" class="btn btn-warning">Sign up</button>
+          </form>
+        </div><!-- //.col-sm-6 -->
+        <div class="col-sm-6">
+          <h2>Sign In</h2>
+          <p>Bootstrap Horizontal form</p>
+          <form action="" method="" enctype="multipart/form-data">
+            <div class="form-group row">
+              <label for="email" class="col-sm-2 col-form-label">Email</label>
+              <div class="col-sm-10">
+                <input type="email" id="email" name="email" class="form-control">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="password" class="col-sm-2 col-form-label">Password</label>
+              <div class="col-sm-10">
+                <input type="password" id="email" name="password" class="form-control">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-10 offset-sm-2">
+                <button type="submit" name="submit" class="btn btn-warning">Sign up</button>
+              </div>
+            </div>
+          </form>
+        </div><!-- //.col-sm-6 -->
+      </div><!-- //.row -->
+
+    </div><!-- //.container -->
+  </div><!-- //.about -->
+
+  <section id="team" class="pt-5 pb-5 bg-warning">
+    <div class="container">
+      <div class="section-title text-center text-white">
+        <h1 class="display-4">Meet our Team</h1>
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, possimus ducimus! Laboriosam eaque
+          dignissimos voluptatum mollitia magnam accusantium illo iste, nulla distinctio earum rerum enim itaque sequi?
+          Repellendus, doloribus assumenda!</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="member">
+            <img src="img/b1.jpg" class="rounded img-fluid" alt="">
+            <h3>Mohammad Karim</h3>
+            <h5>Software Engineer</h5>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="member">
+            <img src="img/b1.jpg" class="rounded-circle img-fluid" alt="">
+            <h3>Mohammad Karim</h3>
+            <h5>Software Engineer</h5>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="member">
+            <img src="img/b1.jpg" class="img-thumbnail" alt="">
+            <h3>Mohammad Karim</h3>
+            <h5>Software Engineer</h5>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="member">
+            <div class="card">
+              <img src="img/b1.jpg" class="card-img-top" alt="">
+              <div class="card-body text-center">
+                <h4>Mohammad Karim</h4>
+                <p class="lead">Software Engineer</p>
+              </div>
+              <div class="card-footer text-center">
+                <a href=""> <i class="icofont-facebook"></i> </a>
+                <a href=""> <i class="icofont-twitter"></i> </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- //#team end -->
+  <!-- Login model start -->
+  <div class="modal fade" id="LoginModal">
+    <div class="modal-dialog">
+      <form action="" method="" enctype="multipart/form-data">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Login Form</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group row">
+              <label for="email" class="col-sm-2 col-form-label">Email</label>
+              <div class="col-sm-10">
+                <input type="email" id="email" name="email" class="form-control">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="password" class="col-sm-2 col-form-label">Password</label>
+              <div class="col-sm-10">
+                <input type="password" id="email" name="password" class="form-control">
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">Login</button>
+          </div>
+        </div><!-- //.modal-content -->
+      </form><!-- // form close -->
+    </div><!-- // .modal-dialog -->
+  </div><!-- //.modal -->
+  <!-- Login model end -->
+  <!-- Registration model start -->
+  <div class="modal fade" id="RegistrationModal">
+    <div class="modal-dialog modal-lg">
+      <form action="" method="" enctype="multipart/form-data">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Registration Form</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group row">
+              <label for="name" class="col-sm-2 col-form-label">Name</label>
+              <div class="col-sm-10">
+                <input type="text" id="name" name="name" class="form-control">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="email" class="col-sm-2 col-form-label">Email</label>
+              <div class="col-sm-10">
+                <input type="email" id="email" name="email" class="form-control">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="password" class="col-sm-2 col-form-label">Password</label>
+              <div class="col-sm-10">
+                <input type="password" id="email" name="password" class="form-control">
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">Register</button>
+          </div>
+        </div><!-- //.modal-content -->
+      </form><!-- // form close -->
+    </div><!-- // .modal-dialog -->
+  </div><!-- //.modal -->
+  <!-- Registration model end -->
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('ul.navbar-nav li.dropdown').hover(function () {
+        $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+      }, function () {
+        $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+      });
+    })
+  </script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
