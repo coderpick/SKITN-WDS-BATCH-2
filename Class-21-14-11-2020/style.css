@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+}
+html {
+  /*scroll-behavior: smooth;*/
+}
+body {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Metrophobic', sans-serif;
+    overflow-x: hidden;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 4px 0;
+}
+.menu-bg{
+    background: #f9f9f9 !important;
+    box-shadow: 2px 2px 4px #444;
+    color: black !important;    
+}
+.navbar-light .navbar-nav .nav-link{
+    font-size: 18px;
+    color:#f9f9f9;
+}
+
+#hero-wrapper {
+    background: url(img/bg-masthead.jpg) no-repeat center center / cover;
+    position: relative;
+    z-index: 1;
+}
+
+#hero-wrapper::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+.hero-content {
+    text-align: center;
+    padding: 140px 0;
+}
+
+.hero-content h1 {
+    color: #fff;
+    font-size: 64px;
+    font-weight: 600;
+}
+
+.hero-content p {
+    color: #cacdcf;
+    max-width: 745px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.line-bar {
+    max-width: 100px;
+    margin: 20px auto;
+    border: none;
+    border-top: 3px solid #F24516;
+}
+
+.line-bar.bgwhite {
+    border-top: 3px solid #fff;
+}
+
+.custom-btn {
+    display: inline-block;
+    background: #eb5931;
+    color: #fff;
+    padding: 16px 46px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: .4s;
+}
+
+.custom-btn:hover {
+    background: #F24516;
+    color: #fff;
+}
+
+/* get start section css */
+
+.section-padding {
+    padding: 96px 0;
+}
+
+#getstart {
+    background: #F4623A;
+    color: #fff;
+}
+
+.section-title {
+    text-align: center;
+}
+
+.section-title h1 {
+    font-size: 42px;
+}
+
+/* service section css  */
+
+.single-service {
+    text-align: center;
+}
+
+.service-icon i {
+    font-size: 96px;    
+    color: #f4623a;
+}
+/*portfolio css*/
+.portfolio-item {
+    position: r;
+}
+
+.portfolio-item {
+    position: relative;
+}
+
+.portfolio-overaly {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    background: rgb(244 98 58 / 85%);
+    text-align: center;
+    bottom: 0;
+    padding: 20%;
+    opacity: 0;
+    transition: .3s;
+}
+.portfolio-item:hover .portfolio-overaly {
+     opacity: 1;
+}
+
+.portfolio-overaly h5 {
+    color: #f2f2f2;
+}
+
+.portfolio-overaly h3 {
+    color: #fff;
+}
+#downlaod{
+    background: #343A40;
+    color: #fff;
+}
+.section-title {}
+
+.contact-item {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.contact-icon {
+    font-size: 66px;
+    color: #6C757D;
+}
+
+.contact-email a {
+    color: #F4623A;
+}
+.footer{
+    text-align: center;
+    background: #d9d9d9;
+    padding: 40px 0;
+}
+.scrollTop {
+    height: 80px;
+    width: 80px;
+    background: red;   
+    font-size: 50px;
+    text-align: center;
+    line-height: 80px;
+    border-radius: 50%;
+    position: fixed;
+    right: 30px;
+    bottom: 70px;
+    z-index: 99999;
+    cursor: pointer;
+}
+.scrollTop i{
+    color: #fff;
+}
