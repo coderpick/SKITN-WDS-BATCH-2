@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Jquery Class -1</title>
+</head>
+<body>
+	
+	<h2 id="title" style="background: green;color:#fff;padding: 20px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae soluta, aspernatur facere repellat in inventore doloremque voluptatibus tempore consequuntur perspiciatis quaerat quo laboriosam cupiditate ea provident pariatur possimus harum excepturi?</h2>
+
+
+	<button id="hide">Hide title</button>
+	<button id="show">Show title</button>
+	<button id="toggle">Toggle title</button>
+ 
+ <h2>Lorem ipsum dolor sit, amet.</h2>
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script>
+
+		$(document).ready(function() {
+
+			/*Hide method*/
+			$("#hide").click(function(){
+
+				$("#title").hide(3000);					
+
+			});
+
+			/*show method*/
+			$("#show").click(function(){
+
+				$("#title").show(3000);					
+
+			});
+			/*Toggle method*/
+			$("#toggle").click(function(){
+
+				$("#title").toggle(3000);					
+
+			});
+
+		});
+
+
+	</script>
+</body>
+</html>
