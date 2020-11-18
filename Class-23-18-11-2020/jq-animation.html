@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>jquery animation</title>
+	<style>
+		.box {
+    width: 200px;
+    height: 100px;
+    background: red;
+    color: #fff;
+    text-align: center;
+    border: 2px solid blue;
+}
+	</style>
+</head>
+<body>
+	
+	<button id="start">Start animation</button>
+	<button id="stop">Stop animation</button>
+	<button id="reset">Reset</button>
+	<hr>
+	<div class="box">
+		<h2>Hello Bangladesh</h2>
+	</div>
+
+
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script>
+		jQuery(document).ready(function($) {
+			$("#start").click(function() {
+				$('.box').animate({
+					width: '100%',
+					height: '200',
+					borderWidth:20
+				},1000);
+			});
+
+			//stop
+			$('#stop').click(function() {
+				$('.box').stop()
+			});
+			//reset 
+			$('#reset').click(function() {
+				$('.box').removeAttr('style')
+			});
+		});
+	</script>
+</body>
+</html>
