@@ -1,0 +1,162 @@
+/* font-family: 'Gentium Book Basic', serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Yeseva One', cursive; */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 4px 0;
+    padding: 0;
+    font-family: 'Yeseva One', cursive;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+}
+
+.section-padding {
+    padding-top: 70px;
+    padding-bottom: 65px;
+}
+
+
+/*  navbar css */
+
+.social-nav .nav-link {
+    color: #dab33e !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Gentium Book Basic', serif;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link,
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .show>.nav-link {
+    color: #fff;
+    border-top: 3px solid #f9f9f9;
+}
+
+#hero-area {
+    background: url(img/header-bg.jpg)no-repeat center center / cover;
+}
+
+.hero-text {
+    padding: 160px 0;
+}
+
+.hero-text h1 {
+    font-size: 72px;
+    color: #f3f4f5;
+    font-family: 'Yeseva One', cursive;
+    font-weight: 600;
+}
+
+.title-bottom-icon {
+    max-width: 230px;
+    margin: 30px auto;
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 20px 50px;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    margin-right: 30px;
+}
+
+.hero-button:last-child {
+    margin-right: 0;
+}
+
+.hero-button.dark-btn {
+    border: 1px solid #000;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+a.hero-button.white-btn {
+    border: 1px solid #d4d0bc;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+
+/* promo section css start */
+
+#promo {
+    background: url(img/dish-section-bg.jpg) no-repeat center center / cover;
+}
+
+.about {
+    text-align: center;
+}
+
+.promo-title {
+    color: #cc9900;
+    padding: 20px 0;
+    font-size: 36px;
+}
+
+.divider {
+    margin-bottom: 20px;
+}
+
+.promo-content p {
+    font-size: 16px;
+}
+
+.promo-content {
+    margin-bottom: 26px;
+}
+
+
+/* inin-gredient */
+
+#in-gredient {
+    background: url(img/in-gredient-bg.jpg) no-repeat center center / cover;
+}
+
+.in-gredient-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 70px 80px;
+    text-align: center;
+    color: #fff;
+}
+
+.gredient-title {
+    color: #fff;
+    padding: 20px 0;
+    font-size: 36px;
+}
+
+.divider {
+    margin-bottom: 20px;
+}
+
+.gredient-text p {
+    font-size: 16px;
+}
