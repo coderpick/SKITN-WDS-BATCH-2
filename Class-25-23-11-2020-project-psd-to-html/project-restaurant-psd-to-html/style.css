@@ -160,3 +160,81 @@ a.hero-button.white-btn {
 .gredient-text p {
     font-size: 16px;
 }
+#food-menu-area{
+    background: url(img/food-menu-bg.jpg) no-repeat center center /cover;
+}
+.food-menu-title {
+    text-align: center;
+    color: #cc9900;
+    margin-bottom: 22px;
+}
+
+.food-menu-title h1 {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.food-menu-item {
+    margin-bottom: 20px;
+    padding: 10px 6px;
+}
+
+.food-menu-item h3 {
+    color: #c89f2d;
+    font-size: 22px;
+    border-bottom: 1px solid #c89f2d;
+    padding-bottom: 7px;
+}
+
+.food-menu-item p {
+    color: #4c4c4c;
+    font-size: 14px;
+    margin-top: 8px;
+}
+.special {
+    position: relative;
+    border: 1px solid #e4d5a8;   
+}
+.special::after {
+    content: "Special";
+    position: absolute;
+    top: -29px;
+    right: -1px;
+    background: #d7bd74;
+    color: #fff;
+    font-size: 12px;
+    padding: 4px;
+    width: 58px;
+    height: 28px;
+    text-align: center;
+   
+}
+#guest-review-area{
+    background: url(img/guest-review-bg.jpg) no-repeat center center / cover;
+}
+.guest-review{
+    background: rgba(0,0,0,0.8);
+    padding: 80px 60px;
+    color: #fff;
+    text-align: center;
+}
+.guest-review-content h3{    
+    font-family: 'Gentium Book Basic', serif;
+    font-size: 25px;  
+    color: #dde0df;
+}
+
+.guest-review-content {
+    position: relative;
+}
+
+.guest-review-content::before {
+    content: "\efcd";
+    font-family: IcoFont;
+    width: 20px;
+    left: -24px;
+    top: -18px;
+    color: #dde0df;
+    position: absolute;
+    font-size: 30px;
+}
