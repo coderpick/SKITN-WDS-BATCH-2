@@ -23,7 +23,7 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 4px 0;
+    margin: 0 0;
     padding: 0;
     font-family: 'Yeseva One', cursive;
 }
@@ -236,5 +236,83 @@ a.hero-button.white-btn {
     top: -18px;
     color: #dde0df;
     position: absolute;
+    font-size: 30px;
+}
+#reservation{
+    background: url(img/reservation-bg.jpg) no-repeat center center / cover;
+}
+
+.reservation-title{
+    text-align:center;
+}
+.reservation-title h1{
+     color: #cc9900;
+     font-size: 34px;
+}
+.reservation-meta{
+    text-align:center;
+}
+.reservation-meta p{
+   color:#4c4c4c;
+   font-size: 14px;   
+}
+.btn-reservation {
+    display: inline-block;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    background: #c9a131;
+    color: #fff;
+    padding: 12px 65px;
+    margin-top: 25px;
+}
+
+.reservation-form label {
+    color: #c9a131;
+    font-weight: 600;
+}
+.reservation-form .form-control:focus {
+    color: #495057;
+    background-color: transparent;
+    border-color: #c9a131;
+    outline: 0;
+    box-shadow:none;
+    
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #4c4c4c;
+  opacity: 1; /* Firefox */
+  font-style: italic;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #4c4c4c;
+  font-style: italic;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #4c4c4c;
+  font-style: italic;
+}
+/*footer css*/
+#footer{
+    background: #191919;
+    color:#fff;
+    padding: 50px 0;
+}
+.footer-meta{
+    font-size: 16px;
+    text-align:center;
+}
+.payment-option{
+    text-align:center;
+}
+.payment-option a{
+    display: inline-block;
+    padding: 2px 12px;
+    background: #fff;
+    color: #333;
+}
+.payment-option a i{
     font-size: 30px;
 }
