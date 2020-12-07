@@ -6,7 +6,9 @@ font-family: 'Yeseva One', cursive; */
 * {
     box-sizing: border-box;
 }
-
+/* html{
+    scroll-behavior: smooth;
+} */
 body {
     font-size: 14px;
     font-family: 'Lato', sans-serif;
@@ -35,7 +37,42 @@ img {
 p {
     font-family: 'Lato', sans-serif;
 }
+.main-menu-area{
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: auto;
+    z-index:99999;
+}
+.logo a img {
+    max-width: 130px;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,.5);
+    font-size: 18px;
+}
+.main-menu {
+    padding-top: 18px;
+}
+li.nav-item {
+    position: relative;
+}
 
+li.nav-item.active::before {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 3px;
+    background: #ddd;
+    content: "";
+}
+
+.menu-bg {
+    background-color: #009688;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+}
 .section-padding {
     padding-top: 70px;
     padding-bottom: 65px;
@@ -48,19 +85,8 @@ p {
     color: #dab33e !important;
 }
 
-.navbar-dark .navbar-nav .nav-link {
-    color: #fff;
-    font-size: 20px;
-    font-family: 'Gentium Book Basic', serif;
-}
 
-.navbar-dark .navbar-nav .active>.nav-link,
-.navbar-dark .navbar-nav .nav-link.active,
-.navbar-dark .navbar-nav .nav-link.show,
-.navbar-dark .navbar-nav .show>.nav-link {
-    color: #fff;
-    border-top: 3px solid #f9f9f9;
-}
+
 
 #hero-area {
     background: url(img/header-bg.jpg)no-repeat center center / cover;
@@ -315,4 +341,24 @@ a.hero-button.white-btn {
 }
 .payment-option a i{
     font-size: 30px;
+}
+/* scroll top btn */
+.scroll-top {
+    height: 60px;
+    width: 60px;
+    background: #f5c747;
+    text-align: center;
+    line-height: 65px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: fixed;
+    right: 30px;
+    bottom: 140px;
+}
+.scroll-top a{
+    display: block;
+}
+.scroll-top a i {
+    font-size: 30px;
+    color: #fff;
 }
