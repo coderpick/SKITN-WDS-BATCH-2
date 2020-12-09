@@ -21,18 +21,16 @@
 	<link rel="stylesheet" href="css/responsive.css">
 </head>
 
-<body  id="top">
+<body id="top" data-spy="scroll" data-target=".navbar" data-offset="50">
 	<div class="main-menu-area">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-3">
-					<div class="logo">
-						<a class="navbar-brand" href=""><img src="img/logo.png" alt=""></a>
-					</div>
-				</div>
-				<div class="col-md-9">
+				<div class="col-12">
 					<div class="main-menu">
 						<nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+							<div class="logo">
+								<a class="navbar-brand" href=""><img src="img/logo.png" alt=""></a>
+							</div>
 							<button class="navbar-toggler" type="button" data-toggle="collapse"
 								data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
 								aria-expanded="false" aria-label="Toggle navigation">
@@ -41,8 +39,7 @@
 							<div class="collapse navbar-collapse" id="navbarSupportedContent">
 								<ul class="navbar-nav ml-auto">
 									<li class="nav-item active">
-										<a class="nav-link" href="#top">Home <span
-												class="sr-only">(current)</span></a>
+										<a class="nav-link" href="#top">Home <span class="sr-only">(current)</span></a>
 									</li>
 									<li class="nav-item">
 										<a class="nav-link" href="#promo">About</a>
@@ -107,7 +104,7 @@
 	<section id="promo" class="section-padding">
 		<div class="container">
 			<div class="row justify-content-center">
-				<div class="col-md-5">
+				<div class="col-sm-12 col-md-5">
 					<div class="about">
 						<h1 class="promo-title">Just the right food</h1>
 						<div class="divider">
@@ -124,7 +121,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-5">
+				<div class="col-sm-12 col-md-5">
 					<div class="promo-dish">
 						<img src="img/dish.png" alt="">
 					</div>
@@ -137,7 +134,7 @@
 	<section id="in-gredient" class="section-padding">
 		<div class="container">
 			<div class="row justify-content-end">
-				<div class="col-md-6">
+				<div class="col-md-8 col-lg-6">
 					<div class="in-gredient-content">
 						<h1 class="gredient-title">Just the right food</h1>
 						<div class="divider">
@@ -151,17 +148,17 @@
 							</p>
 						</div>
 						<div class="row text-center">
-							<div class="col-md-4">
+							<div class="col-12 col-sm-4 col-md-4">
 								<div class="gredient-image">
 									<img src="img/spice-1.png" alt="">
 								</div>
 							</div>
-							<div class="col-md-4">
+							<div class="col-12 col-sm-4 col-md-4">
 								<div class="gredient-image">
 									<img src="img/spice-2.png" alt="">
 								</div>
 							</div>
-							<div class="col-md-4">
+							<div class="col-12 col-sm-4 col-md-4">
 								<div class="gredient-image">
 									<img src="img/spice-3.png" alt="">
 								</div>
@@ -359,7 +356,7 @@
 	</section>
 	<!-- reservation section start -->
 	<div class="scroll-top">
-	<a href="#top"><i class="icofont-arrow-up"></i></a>
+		<a href="#top"><i class="icofont-arrow-up"></i></a>
 	</div>
 	<!-- start footer section -->
 	<section id="footer">
@@ -431,25 +428,47 @@
 		// $('#date').datepicker({
 		// 	uiLibrary: 'bootstrap4'
 		// });
-	$(document).ready(function(){
+		$(document).ready(function () {
 
-		 $(window).scroll(function () {
-				if ($(this).scrollTop() > 500) {
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > 800) {
 					$('.scroll-top').fadeIn();
 				} else {
 					$('.scroll-top').fadeOut();
 				}
 			});
-		/* add menu backgorund color */
-		 $(window).scroll(function () {
-			if ($(this).scrollTop() > 300) {
-				$('.main-menu-area').addClass('menu-bg');
-			} else {
-				$('.main-menu-area').removeClass('menu-bg');
-			}
-		});
+			/* add menu backgorund color */
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > 100) {
+					$('.main-menu-area').addClass('menu-bg');
+				} else {
+					$('.main-menu-area').removeClass('menu-bg');
+				}
+			});
 
-	});
+			(function () {
+				// Your base, I'm in it!
+				var originalAddClassMethod = jQuery.fn.addClass;
+				jQuery.fn.addClass = function () {
+					// Execute the original method.
+					var result = originalAddClassMethod.apply(this, arguments);
+					// trigger a custom event
+					jQuery(this).trigger('cssClassChanged');
+					// return the original result
+					return result;
+				}
+			})();
+
+			$(".nav-link").bind('cssClassChanged', function (e) {
+				$(".nav-item").each(function () {
+					if ($(this).hasClass("active") == true) {
+						$(this).removeClass("active");
+					}
+				});
+				$(this).removeClass("active").parent().addClass("active");
+			});
+
+		});
 
 	</script>
 	<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->

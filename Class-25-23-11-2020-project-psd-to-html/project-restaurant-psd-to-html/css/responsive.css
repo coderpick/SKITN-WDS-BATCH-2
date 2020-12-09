@@ -1,0 +1,113 @@
+/*  Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575.98px) {
+    .main-menu .navbar .nav-link {
+        margin-top: 0;
+    }
+    .navbar-collapse {
+        margin-top: 6px;
+    }
+    .main-menu .navbar .nav-item.active::before {
+        content: "";
+        position: absolute;
+        height: 0;
+        width: 100%;
+        background: transparent;
+        top: 0;
+        left: 0;
+    }
+    .main-menu .navbar .nav-item.active {
+        background: #068276;
+        padding-left: 6px;
+    }
+    .hero-text h1 {
+        font-size: 28px;
+    }
+    .hero-button {
+        display: inline-block;
+        padding: 10px 16px;
+        color: #fff;
+        font-family: 'Lato', sans-serif;
+        margin-right: 14px;
+    }
+    .title-bottom-icon img {
+        max-width: 80%;
+    }
+    .promo-title {
+        font-size: 30px;
+    }
+    .gredient-image img {
+        margin-bottom: 20px;
+    }
+}
+
+/*  Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .main-menu .navbar .nav-link {
+        margin-top: 0;
+    }
+    .navbar-collapse {
+        margin-top: 6px;
+    }
+    .main-menu .navbar .nav-item.active::before {
+        content: "";
+        position: absolute;
+        height: 0;
+        width: 100%;
+        background: transparent;
+        top: 0;
+        left: 0;
+    }
+    .main-menu .navbar .nav-item.active {
+        background: #068276;
+        padding-left: 6px;
+    }
+    .hero-text h1 {
+        font-size: 44px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .main-menu .navbar .nav-link {
+        margin-top: 0;
+    }
+    .navbar-collapse {
+        margin-top: 6px;
+    }
+    .main-menu .navbar .nav-item.active::before {
+        content: "";
+        position: absolute;
+        height: 0;
+        width: 100%;
+        background: transparent;
+        top: 0;
+        left: 0;
+    }
+    .main-menu .navbar .nav-item.active {
+        background: #068276;
+        padding-left: 6px;
+    }
+    .hero-text h1 {
+        font-size: 52px;
+    }
+    .promo-title {
+        font-size: 28px;
+    }
+    .promo-dish img {
+        margin-top: 100px;
+    }
+    #in-gredient .row {
+        justify-content: center!important;
+    }
+}
+
+/*  Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+/*  Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {}

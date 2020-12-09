@@ -6,25 +6,21 @@ font-family: 'Yeseva One', cursive; */
 * {
     box-sizing: border-box;
 }
+
 /* html{
     scroll-behavior: smooth;
 } */
+
 body {
     font-size: 14px;
     font-family: 'Lato', sans-serif;
 }
 
-a:hover,
-a:focus {
+a:hover, a:focus {
     text-decoration: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     margin: 0 0;
     padding: 0;
     font-family: 'Yeseva One', cursive;
@@ -37,56 +33,66 @@ img {
 p {
     font-family: 'Lato', sans-serif;
 }
-.main-menu-area{
-    position:fixed;
-    top:0;
-    left:0;
+
+.main-menu-area {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: auto;
-    z-index:99999;
+    z-index: 99999;
 }
+
 .logo a img {
     max-width: 130px;
 }
+
 .navbar-dark .navbar-nav .nav-link {
-    color: rgba(255,255,255,.5);
+    color: rgba(255, 255, 255, .5);
     font-size: 18px;
 }
-.main-menu {
-    padding-top: 18px;
+
+.main-menu .navbar {
+    padding: 0 1rem;
 }
-li.nav-item {
+
+.main-menu .navbar .nav-item {
     position: relative;
 }
 
-li.nav-item.active::before {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    top: 0;
-    height: 3px;
-    background: #ddd;
+.main-menu .navbar .nav-item.active::before {
     content: "";
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #dab33e;
+    top: 0;
+    left: 0;
+}
+
+.navbar-collapse {
+    margin-top: -20px;
+}
+
+.main-menu .navbar .nav-link {
+    margin-top: 24px;
 }
 
 .menu-bg {
     background-color: #009688;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
 }
+
 .section-padding {
     padding-top: 70px;
     padding-bottom: 65px;
 }
-
 
 /*  navbar css */
 
 .social-nav .nav-link {
     color: #dab33e !important;
 }
-
-
-
 
 #hero-area {
     background: url(img/header-bg.jpg)no-repeat center center / cover;
@@ -130,7 +136,6 @@ a.hero-button.white-btn {
     background: rgba(255, 255, 255, 0.3);
 }
 
-
 /* promo section css start */
 
 #promo {
@@ -159,7 +164,6 @@ a.hero-button.white-btn {
     margin-bottom: 26px;
 }
 
-
 /* inin-gredient */
 
 #in-gredient {
@@ -186,9 +190,11 @@ a.hero-button.white-btn {
 .gredient-text p {
     font-size: 16px;
 }
-#food-menu-area{
+
+#food-menu-area {
     background: url(img/food-menu-bg.jpg) no-repeat center center /cover;
 }
+
 .food-menu-title {
     text-align: center;
     color: #cc9900;
@@ -217,10 +223,12 @@ a.hero-button.white-btn {
     font-size: 14px;
     margin-top: 8px;
 }
+
 .special {
     position: relative;
-    border: 1px solid #e4d5a8;   
+    border: 1px solid #e4d5a8;
 }
+
 .special::after {
     content: "Special";
     position: absolute;
@@ -233,20 +241,22 @@ a.hero-button.white-btn {
     width: 58px;
     height: 28px;
     text-align: center;
-   
 }
-#guest-review-area{
+
+#guest-review-area {
     background: url(img/guest-review-bg.jpg) no-repeat center center / cover;
 }
-.guest-review{
-    background: rgba(0,0,0,0.8);
+
+.guest-review {
+    background: rgba(0, 0, 0, 0.8);
     padding: 80px 60px;
     color: #fff;
     text-align: center;
 }
-.guest-review-content h3{    
+
+.guest-review-content h3 {
     font-family: 'Gentium Book Basic', serif;
-    font-size: 25px;  
+    font-size: 25px;
     color: #dde0df;
 }
 
@@ -264,24 +274,29 @@ a.hero-button.white-btn {
     position: absolute;
     font-size: 30px;
 }
-#reservation{
+
+#reservation {
     background: url(img/reservation-bg.jpg) no-repeat center center / cover;
 }
 
-.reservation-title{
-    text-align:center;
+.reservation-title {
+    text-align: center;
 }
-.reservation-title h1{
-     color: #cc9900;
-     font-size: 34px;
+
+.reservation-title h1 {
+    color: #cc9900;
+    font-size: 34px;
 }
-.reservation-meta{
-    text-align:center;
+
+.reservation-meta {
+    text-align: center;
 }
-.reservation-meta p{
-   color:#4c4c4c;
-   font-size: 14px;   
+
+.reservation-meta p {
+    color: #4c4c4c;
+    font-size: 14px;
 }
+
 .btn-reservation {
     display: inline-block;
     border: none;
@@ -297,52 +312,65 @@ a.hero-button.white-btn {
     color: #c9a131;
     font-weight: 600;
 }
+
 .reservation-form .form-control:focus {
     color: #495057;
     background-color: transparent;
     border-color: #c9a131;
     outline: 0;
-    box-shadow:none;
-    
-}
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #4c4c4c;
-  opacity: 1; /* Firefox */
-  font-style: italic;
+    box-shadow: none;
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: #4c4c4c;
-  font-style: italic;
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #4c4c4c;
+    opacity: 1;
+    /* Firefox */
+    font-style: italic;
 }
 
-::-ms-input-placeholder { /* Microsoft Edge */
-  color: #4c4c4c;
-  font-style: italic;
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #4c4c4c;
+    font-style: italic;
 }
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #4c4c4c;
+    font-style: italic;
+}
+
 /*footer css*/
-#footer{
+
+#footer {
     background: #191919;
-    color:#fff;
+    color: #fff;
     padding: 50px 0;
 }
-.footer-meta{
+
+.footer-meta {
     font-size: 16px;
-    text-align:center;
+    text-align: center;
 }
-.payment-option{
-    text-align:center;
+
+.payment-option {
+    text-align: center;
 }
-.payment-option a{
+
+.payment-option a {
     display: inline-block;
     padding: 2px 12px;
     background: #fff;
     color: #333;
 }
-.payment-option a i{
+
+.payment-option a i {
     font-size: 30px;
 }
+
 /* scroll top btn */
+
 .scroll-top {
     height: 60px;
     width: 60px;
@@ -355,9 +383,11 @@ a.hero-button.white-btn {
     right: 30px;
     bottom: 140px;
 }
-.scroll-top a{
+
+.scroll-top a {
     display: block;
 }
+
 .scroll-top a i {
     font-size: 30px;
     color: #fff;
